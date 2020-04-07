@@ -83,9 +83,7 @@ checkpoint=[]
 oks=[]
 cps=[]
 id=[]		
-threads = []						
-clone group = []				
-clone group = []		
+threads = []												
 listgroup = []		
 #### login ####
 def login():
