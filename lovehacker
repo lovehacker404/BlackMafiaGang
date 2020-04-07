@@ -114,7 +114,7 @@ while (loop == 'true'):
         print " ' + G + 'Wrong Username"
         os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
 
-		print logo
+		print (logo)
 		jalan('' +R + 'Warning: ' + Y + 'Do Not Use Your Personal Account')
 		jalan(" + R + 'Notice   : ' + Y + 'Use a New Account To Login' )
 		jalan(" + R + 'Notice   : ' + Y + 'Only Use Termux Old Version 0.63 to 0.83 ' )
