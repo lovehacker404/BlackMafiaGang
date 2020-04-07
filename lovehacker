@@ -151,7 +151,7 @@ def menu():
 	print
 	print (S + 50*'-')
 	print
-	print (S + '[' + P + '☞1' + S + ']' + S + ' Fast Cloning New Update')
+	print (S + '[' + P + '☞1' + S + ']' + S + ' Fast Cloning USA ID')
 	print (S + '[' + P + '☞2' + S + ']' + S + ' Black Mafia WhatsApp Group')
 	print (S + '[' + Y + '☞3' + S + ']' + G + ' Log Out')
 	print (S + '[' + Y + '☞0' + S + ']' + R + ' Exit')
